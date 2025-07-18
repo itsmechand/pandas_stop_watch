@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+
+    <title>StopWatch</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="stop.css">
+
+</head>
+
+<body>
+
+    <div class="side-title">Panda's Stopwatch</div>
+    <div class="container">
+        <canvas id="confetti-canvas"
+            style="position:absolute;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:100;display:none;"></canvas>
+        <div class="timer-Display">
+            00 : 00 : 00
+        </div>
+        <ul class="laps"></ul>
+        <div class="buttons">
+            <button id="startTimer" onclick="start()">Start</button>
+            <button id="pauseTimer" onclick="pause()">Pause</button>
+            <button id="resetTime" onclick="reset()">Reset</button>
+
+        </div>
+
+    </div>
+
+
+    <script src="stop.js"></script>
+</body>
+
+</html>
